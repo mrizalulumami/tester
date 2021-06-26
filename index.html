@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en" id="home">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+                
+
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <title>File Test</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <a class="scrollToTop" href="#">
+        <i class="fa fa-angle-up"></i>
+      </a>
+    <!-- END SCROLL TOP BUTTON -->
+  
+    <!-- Start header section -->
+    <header id="mu-header">  
+      <nav class="navbar navbar-default mu-main-navbar" role="navigation">  
+        <div class="container">
+          <div class="navbar-header">
+            <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+  
+            <!-- LOGO -->       
+  
+             <!--  Text based logo  -->
+            <!-- <a class="navbar-brand" href="index.html">Link<span>Test</span></a>  -->
+  
+                <!--  Image based logo  -->
+            <a class="nav-ma" href="index.html"><img src="img/logo.png" alt="Logo img"></a>
+           
+  
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+              <li><a href="">Qurban</a></li>
+              <li><a href="">Ziswaf</a></li>                       
+              <li><a href="">Program</a></li>                       
+              <li><a href="">Tentang</a></li>                       
+              <li><a href="">layanan</a></li>
+              <li><a href="">Berita</a></li> 
+
+              <li class="navuser"><a href=""><img src="img/user.png" align="middle"> Masuk</a></li>
+              <li><a href="">Daftar</a></li>
+            </ul>                                        
+          </div><!--/.nav-collapse -->       
+        </div>          
+      </nav> 
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Start Slider -->
+    <section id="mu-slider">
+      <div class="container">
+        <div class="row justify-content-between">
+      <!-- bagian kiri -->
+          <div class="col-lg-6 pr-3 pr-lg-5">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="title-with icon">
+                      <div class="media">
+                        <img class="padding-img" src="img/dompet.png" alt="">
+                        <div class="media-body text-left">
+                          <h2>Pembayaran</h2>
+                          <p class="h4">Isi jumlah donasimu kawan</p>
+                      </div>
+                    </div>
+                    </div>
+
+              <!-- up -->
+              <div class="payment-item paymento">
+                <div class="item">
+                  <div class="media">
+                    <img class="padding-img" src="img/sapi.jpg" alt="" height="70" width="100">
+                    <div class="media-body">
+                      <h4 class="h4">Anda akan berdonasi untuk project:</h4>
+                      <h3><a href="">Mari Kembali Bersolidaritas untuk Warga Kita</a></h3>
+                      <h5><a href=""><i class="glyphicon glyphicon-user"></i> Contact Admin</a></h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Midle -->
+              <div class="form-group">
+                <h3>Jumlah Donasi</h3>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Rp.</span>
+                    <input id="donasiForm" data-maxlength="6" class="form-control text-green size24 " type="number" placeholder="Contoh: Rp.1.000.000" required="required" decimal="" thousands="." prefix="" suffix=""precision="0">
+                  </div>
+                  <span class="form-text"><i>Jumlah donasi harus lebih besar dari Rp.10.000,-</i></span>
+                </div>
+              </div>
+              <!-- down -->
+              <div class="choose-account text-center">
+                <h4><a class="text-primary">Masuk</a> atau lengkapi data dibawah ini</h4>
+              </div>
+              <!-- ================Data Diri================ -->
+              <div class="form-group">
+                <input type="text" class="form-control-name" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <!--  -->
+              <div class="form-group">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                  <h6 class="co-po">Sembunyikan nama saya (Hamba Allah)</h6>
+                </label>
+              </div>
+              <!--  -->              
+              <div class="form-group">
+                <input type="text" class="form-control-name" placeholder="Email" aria-label="email" aria-describedby="basic-addon1">
+                <label class="color" font-size="12px">Kirim bukti donasi dan kabar perkembangan program melalui email saya.</label>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control-name jarak-telp" placeholder="Nomor Telpon" aria-label="nomor telpon" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group">
+                <textarea name="" class="form-control-name" id="textarea-count" maxlength="140" rows="5" placeholder="Tulis doa atau dukungan untuk project donasi ini"></textarea>
+                  <div class="char-counter">
+                    <span id="char-current">0/140</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end bagian kiri -->
+      <!-- bagian kanan-->
+          <div class="col-lg-6 pl-3 pl-lg-5">
+            <div class="card cardpadr">
+              <div class="card-body pb-0 line">
+                <div class="title-with-icon mb-0">
+                  <div class="media">
+                    <img class="padding-img" src="img/uang.png" alt="">
+                      <div class="media-body">
+                      <h2>Metode Pembayaran</h2>
+                      </div>
+                    </div>
+                  <div class="row mt-4">
+                    <div class="col-12">
+                      <div class="button-info" data-v-37c5c8bc="">
+                        Untuk donasi di bawah 100k bisa menggunakan
+                        e-wallet, dan donasi di atas 100k bisa menggunakan
+                        e-wallet dan juga VA Bank.
+                        <img src="img/warning icon.png" class="fa floating-fa"alt="" height="30" width="30"></img>                        
+                      </div>  
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                <!-- collapse -->
+                <div class="card-body border-0 p-0">
+                  <div class="paymnet-method">
+                    <div class="payment-bank">                       
+                      <label class="sua" data-v-37c5c8bc="" data-target="#payment digital" data-toggle="collapse" aria-expanded="false">
+                        <div class="label text">
+                          <h4 class="warna text-left" data-v-37c5c8bc="">Dompet Digital</h4>
+                          <p class="warna2" data-v-37c5c8bc="">Pembayaran dengan dompet digital.</p>
+                        </div>                      
+                      </label> 
+                    </div>
+                    <!-- test -->   
+                    <!-- <div class="payment-radio">
+                      <label for="gopay">
+                        <div class="logo-bank">
+                          <img src="img/gopay.png" alt="">                        
+                        </div>
+                        <div class="label-text">
+                          <h4 class="d-none d-md-block">Pemayaran QR</h4>
+                          <p class="d-none d-md-block">Bayar dengan aplikasi pilihan anda.</p>
+                        </div>                         
+                      </label>
+                    </div> -->
+                    <!-- test -->
+                  </div>
+                </div>
+                <!-- end collapse -->
+              </div>
+              <!-- pembayaran -->              
+              <div class="cardus padd15">
+                <input type="radio" name="digi-payment" id="card1">
+                <label for="card1" class="imcenter">                    
+                    <h5><img class="leftside" src="img/gopay.png" height="70px" width="80px" align="middle" alt="Gopay">Pembayan QR</h5>                                                        
+                </label>      
+              </div>
+              <div class="cardus padd15">
+                <input type="radio" name="digi-payment" id="card2">
+                <label for="card2" class="imcenter">                    
+                    <h5><img class="leftside" src="img/OVO.png" height="60px" width="70px" align="middle" alt="Gopay">Pembayan OVO</h5>                                                        
+                </label>      
+              </div>
+              <div class="cardus padd15">
+                <input type="radio" name="digi-payment" id="card3">
+                <label for="card3" class="imcenter">                    
+                    <h5><img class="leftside" src="img/DANA.png" height="60px" width="70px" align="middle" alt="Gopay">Pembayan DANA</h5>                                                        
+                </label>      
+              </div>
+              <div class="cardus padd15">
+                <input type="radio" name="digi-payment" id="card4">
+                <label for="card4" class="imcenter">                    
+                    <h5><img class="leftside" src="img/Linkaja.svg" height="60px" width="70px" align="middle" alt="Gopay">Pembayan Link Aja</h5>                                                        
+                </label>      
+              </div>
+              <div class="cardus padd15">
+                <input type="radio" name="digi-payment" id="card5">
+                <label for="card6" class="imcenter">                    
+                    <h5><img class="leftside" src="img/paypal.png" height="60px" width="70px" align="middle" alt="Gopay">Pembayan Paypal</h5>                                                        
+                </label>      
+              </div>            
+              <!-- end pembayaran -->
+              <!-- aggrement -->              
+              <label class="control control--checkbox">
+                <input type="checkbox"/>
+                <div class="control__indicator"></div>
+                <h3>Saya setuju dengan syarat dan ketentuan yang berlaku.</h3>
+              </label>
+              <!-- end aggremet -->
+              <div class="form-group">
+                <button id="paymentBtn"  class="btn btn-primary btn-block btn-md" type="submit" disabled="disabled"><a href=""></a> Lanjutkan Pembayaran</button>
+              </div>
+          </div>
+        <!-- end bagian kanan -->  
+      </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Slider -->
+    <!-- footer -->
+    <footer>
+      <div class="footer fo-ma">
+        <div class="container">
+          <div class="row d-none d-md-flex">
+            <div class="col-5 footer-description">
+              <img calss="mb20" src="img/logo.png" alt="" width="90">
+              <p class="text-h5 text-72 text-justify">
+                "<a class="text-primary" href="">LinkTes</a> adalah situs resmi
+                Lembaga Amil Zakat, Infaq dan Shadaqah NU yang dikelola oleh
+                Pengurus Pusat (Lombok). Saran dan kritik: email@Linktes.id”                  
+              </p>
+            </div>
+            <div class="col footer-list">
+              <h3 class="text-55">
+                <strong>Learn More</strong>
+              </h3>
+              <ul>
+                <li><a href="">Tentang</a></li>
+                <li><a href="">Apa itu Zifwaf?</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Syarat dan ketentuan</a></li>
+                <li><a href="">Berita</a></li>
+                <li><a href="">Refund Policy</a></li>
+              </ul>
+            </div>
+            <div class="col footer-list">
+              <h3 class="text-55">
+                <strong>Link Test</strong>
+                <p class="text-h5 text-72">                
+                 Gedung PBNU, Lt. 2
+                 <br>
+                 Jl. Kramat Raya, No. 164, Jakarta Pusat (10430)
+                 <br>
+                 Telp: (021) 3102913 
+                 <br>
+                 Hp/WA: 0813 9800 9800               
+                </p>
+              </h3>
+            </div>
+            <div class="col footer-list">
+              <h3 class="text-55">
+                <strong>Ikuti Kami</strong>
+                <ul class="d-flex">
+                  <li><a href="" target="_blank"><img src="img/fb.svg" alt="" height="30px" width="60px"></a></li>
+                  <li><a href="" target="_blank"><img src="img/ig.svg" alt="" height="30px" width="60px"></a></li>
+                  <li><a href="" target="_blank"><img src="img/ty.svg" alt="" height="30px" width="60px"></a></li>
+                  <li><a href="" target="_blank"><img src="img/tw.svg" alt="" height="30px" width="60px"></a></li>
+                </ul>
+              </h3>
+            </div>            
+          </div>
+          <hr class="mb30">
+          <div class="row">
+            <div class="col-12 text-center text-md-left">
+              <h6 clas="text72">
+                Copyright © 2021 · linkTest
+                · All Right Reserved
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </footer>
+    <!-- footer -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.11.2.min.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+   
+      </body>
+</html>
